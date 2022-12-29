@@ -1,4 +1,5 @@
 ---
+const pageTitle = 'About'
 ---
 
 <html lang="en">
@@ -7,7 +8,7 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Lyle Klyne</title>
+		<title>{pageTitle}</title>
 	</head>
 	<body>
         <div class='nav'>
@@ -15,7 +16,7 @@
             <a href='/about'>About</a>
             <a href='/blog'>Blog</a>
         </div>
-		<h1>About</h1>
+		<h1>{pageTitle}</h1>
         <p>Hello and good to see you! I'm Lyle, a designer, artist, and aspiring developer. I enjoy making purposeful software with good people — you can find me happiest when I'm making tools and experiences that cultivate intellect/creativity or drive positive change. I also enjoy making silly things with my friends.
         <br><br>
         I currently design software for mission operations at [NASA’s Jet Propulsion Laboratory](https://www.jpl.nasa.gov). I enjoy 3D, animation, sound design, building furniture, and .</p>
