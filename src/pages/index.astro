@@ -1,13 +1,21 @@
 ---
+import '../styles/global.css'
+
+const pageTitle = 'Lyle Klyne'
 ---
 
 <html lang="en">
 	<head>
+		<!-- Starter stuff -->
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Lyle Klyne</title>
+
+		<!-- Fonts -->
+		<link rel="preconnect" href="https://rsms.me/">
+		<link rel="stylesheet" href="https://rsms.me/inter/inter.css">
 	</head>
 	<body>
 		<div class='nav'>
@@ -15,6 +23,6 @@
             <a href='/about'>About</a>
 			<a href='/blog'>Blog</a>
         </div>
-		<h1>Lyle Klyne</h1>
+		<h1>{pageTitle}</h1>
 	</body>
 </html>

@@ -1,4 +1,5 @@
 ---
+const pageTitle = 'Blog'
 ---
 
 <html lang="en">
@@ -7,7 +8,7 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Lyle Klyne</title>
+		<title>Lyle Klyne - {pageTitle}</title>
 	</head>
 	<body>
         <div class='nav'>
@@ -15,7 +16,7 @@
             <a href='/about'>About</a>
             <a href='/blog'>Blog</a>
         </div>
-		<h1>Blog</h1>
+		<h1>{pageTitle}</h1>
         <p>This is where the blog goes</p>
 		<ul>
 			<li><a href='/posts/post-1'>Building a blog</a></li>
