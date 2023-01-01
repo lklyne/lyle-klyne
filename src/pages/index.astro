@@ -1,28 +1,18 @@
 ---
-import '../styles/global.css'
-
+import BaseLayout from "../layouts/BaseLayout.astro";
 const pageTitle = 'Lyle Klyne'
 ---
+<style>
+body {
+	background-color: #292337;
+	color: white;
+}
+</style>
 
-<html lang="en">
-	<head>
-		<!-- Starter stuff -->
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Lyle Klyne</title>
-
-		<!-- Fonts -->
-		<link rel="preconnect" href="https://rsms.me/">
-		<link rel="stylesheet" href="https://rsms.me/inter/inter.css">
-	</head>
-	<body>
-		<div class='nav'>
-            <a href='/'>Home</a>
-            <a href='/about'>About</a>
-			<a href='/blog'>Blog</a>
-        </div>
-		<h1>{pageTitle}</h1>
-	</body>
-</html>
+<BaseLayout>
+	<h3>Lyle Klyne</h3>
+	<br><br>
+	<p class='summary'>I'm designing software at NASA's Jet Propulsion Laboratory, working on tools supporting mission planning, sequencing, and spacecraft visualization for Mars 2020 and Europa Clipper.</p>
+	<br><br>
+	<p>I'm also working on lots of other fun things! I build websites like Jackson.radio.</p>
+</BaseLayout>>

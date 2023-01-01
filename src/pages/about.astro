@@ -1,6 +1,7 @@
 ---
-import '../styles/global.css'
-import '@fontsource/newsreader'
+
+import BaseLayout from '../layouts/BaseLayout.astro';
+
 const pageTitle = 'About'
 
 const identity = {
@@ -15,7 +16,6 @@ const lookingForWork = false
 
 const skills = ['Interaction Design', 'Data Visualization', 'Web Dev']
 
-const backgroundColor = 'purple'
 ---
 
 <html lang="en">
@@ -26,22 +26,10 @@ const backgroundColor = 'purple'
 		<meta name="generator" content={Astro.generator} />
 		<title>{pageTitle}</title>
 
-		<style define:vars={{backgroundColor}}>
-			body {
-				background-color: var(--backgroundColor);
-			}
-		</style>
 	</head>
 	<body>
-        <div class='nav'>
-            <a href='/'>Home</a>
-            <a href='/about'>About</a>
-            <a href='/blog'>Blog</a>
-        </div>
-		<h1>{pageTitle}</h1>
-        <p>Hello and good to see you! I'm {identity.firstName}, a designer, artist, and aspiring developer. I enjoy making purposeful software with good people — you can find me happiest when I'm making tools and experiences that cultivate intellect/creativity or drive positive change. I also enjoy making silly things with my friends.
-        <br><br>
-        I currently design software for mission operations at [NASA’s Jet Propulsion Laboratory](https://www.jpl.nasa.gov). I enjoy 3D, animation, sound design, building furniture, and .</p>
-		{lookingForWork && <p>I'm currently looking for new opportunities. Feel free to drop me a line.</p>}
+		<BaseLayout>
+			<p>Hello and good to see you! I'm {identity.firstName}, a designer, artist, and aspiring developer. I enjoy making purposeful software with good people — you can find me happiest when I'm making tools and experiences that cultivate intellect/creativity or drive positive change. I also enjoy making silly things with my friends. I currently design software for mission operations at [NASA’s Jet Propulsion Laboratory](https://www.jpl.nasa.gov). I enjoy 3D, animation, sound design, building furniture, and .</p>
+				{lookingForWork && <p>I'm currently looking for new opportunities. Feel free to drop me a line.</p>}</BaseLayout>
 	</body>
 </html>

@@ -1,6 +1,11 @@
-:root { font-family: 'Inter', sans-serif; }
+:root {
+    font-family: 'Inter', sans-serif;
+}
+
 @supports (font-variation-settings: normal) {
-  :root { font-family: 'Inter var', sans-serif; }
+    :root {
+        font-family: 'Inter var', sans-serif;
+    }
 }
 
 html {
@@ -12,18 +17,95 @@ body {
     width: 100%;
     max-width: 80ch;
     padding: 1rem;
-    line-height: 1.5;
-  }
-  
-  * {
+    line-height: 1.5;    
+}
+
+* {
     box-sizing: border-box;
-  }
-  
-  h1 {
+}
+
+h1 {
     margin: 1rem 0;
     font-size: 2.5rem;
-  }
+}
 
-  p {
+h3 {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+p {
     font-family: "Newsreader", serif;
-  }
+    font-size: 1.15rem;
+    line-height: 1.6em;
+    letter-spacing: -0.015em;
+}
+
+/* main styles */
+.page-title {
+    margin-bottom: 4rem;
+}
+
+.summary {
+    font-size: 1.5rem;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    line-height: 160%;
+
+}
+
+/* nav styles */
+
+.hamburger {
+    padding-right: 20px;
+    cursor: pointer;
+    /* display: none; */
+}
+
+.hamburger .line {
+    display: block;
+    width: 1.5rem;
+    height: .25rem;
+    margin-bottom: .25rem;
+    background-color: black;
+}
+
+.nav-links {
+    width: 100%;
+    top: 5rem;
+    background-color: #ff9776;
+    display: none;
+    margin: 0;
+}
+
+.nav-links a {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.nav-links a:hover,
+a:focus {
+    background-color: #ff9776;
+}
+
+.expanded {
+    display: unset;
+}
+
+@media screen and (min-width: 636px) {
+    .nav-links {
+        display: block;
+        position: static;
+        width: auto;
+        background: none;
+    }
+
+    .nav-links a {
+        display: inline-block;
+        padding: 15px 20px;
+    }
+
+}
