@@ -3,17 +3,3 @@ const { platform, username } = Astro.props;
 ---
 <a href={`https://www.${platform}.com/${username}`}>{platform}</a>
 
-<style>
-    a {
-      padding: 0;
-      color: white;
-      text-decoration: none;
-      border-bottom: 1px dashed rgba(255, 255, 255, 0.5)
-
-    }
-
-    a:hover {
-        border-bottom: 1px solid white
-    }
-
-  </style>
