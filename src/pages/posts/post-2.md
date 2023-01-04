@@ -1,15 +1,17 @@
 ---
-title: 'Post 2'
+layout: ../../layouts/MarkdownPostLayout.astro
+title: 'Carl Sagan + Apple Pie'
 pubDate: 2022-12-25
 description: 'Description of second post.'
 author: 'Lyle Klyne'
 image:
     url: 'https://astro.build/assets/blog/astro-1-release-update/cover.jpeg' 
     alt: 'The Astro logo with the word One.'
-tags: ["astro", "blogging", "learning in public"]
+tags: ["blogging", "learning in public"]
 ---
-# Post 2
 
-Published on: 2022-12-25
+Carl Sagan:
 
-This is post 2...
+> If you wish to make an apple pie from scratch, you must first invent the universe. 
+
+[Youtube](https://www.youtube.com/watch?v=7s664NsLeFM)

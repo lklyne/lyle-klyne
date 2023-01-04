@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import Link from "../components/Link.astro";
 const pageTitle = 'Lyle Klyne'
 const employer = `NASA's Jet Propulsion Laboratory`
 const employerURL = `https://www.jpl.nasa.gov/`
@@ -14,12 +15,14 @@ body {
 <BaseLayout>
 	<h3>Lyle Klyne</h3>
 	<br><br>
-	<p class='summary'>I'm designing software at <a href = {employerURL} target="_blank" rel="noopener noreferrer">NASA's Jet Propulsion Laboratory</a>, working on tools supporting mission planning, sequencing and spacecraft visualization for <a href='https://mars.nasa.gov/mars2020/' target="_blank" rel="noopener noreferrer">Mars 2020</a> and <a href='https://mars.nasa.gov/mars2020/' target="_blank" rel="noopener noreferrer">Europa Clipper</a>.</p>
+	<p class='summary'>I'm designing software at <Link url={employerURL} text={employer} />, working on tools supporting mission planning, sequencing and spacecraft visualization for <a href='https://mars.nasa.gov/mars2020/' target="_blank" rel="noopener noreferrer">Mars 2020</a> and <a href='https://mars.nasa.gov/mars2020/' target="_blank" rel="noopener noreferrer">Europa Clipper</a>.</p>
 	<br><br>
-	<p>Making things brings me immense joy and is a primary form of self-expression. I spend a lot of my time designing digital tools and interactive experiences, but I also make art, furniture, objects, lights and sounds.</p>
+	<p>Making things brings me immense joy and is one of my core forms of self-expression. I spend a lot of my time designing digital tools and interactive experiences, but I also make art, furniture, objects, lights and sounds. A few of the things I've been working on: </p>
 	<ul>
-		<li>Haha</li>
-		<li>lol</li>
-
+		<li>An open-source <Link url='https://github.com/NASA-AMMOS/aerie' text='framework for modeling spacecraft' /> with a lot of great people at JPL.</li>
+		<li>Science targeting and terrain visualization tools <Link url='https://youtu.be/4OY0YCdFDpU?t=2323' text='ASTTRO' /> & <Link url='https://www.jpl.nasa.gov/news/mars-virtual-reality-software-wins-nasa-award' text='OnSight' /> — used on daily operations for Perseverance and Opportunity.</li>
+		<li>A simplified public version of these tools with WebXR support: <Link url="https://mars.nasa.gov/mars2020/surface-experience/?drive=1222\&site=26" text='Explore with Perseverance' /> </li>
+		<li>A design system to support data-rich and complex patterns commonly found in spacecraft planning: <Link url="https://github.com/nasa-jpl/stellar" text='Stellar Design System' /> </li>
+		
 	</ul>
 </BaseLayout>
