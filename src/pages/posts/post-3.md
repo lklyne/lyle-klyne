@@ -2,7 +2,7 @@
 layout: ../../layouts/MarkdownPostLayout.astro
 title: 'Post 3'
 pubDate: 2022-12-25
-description: 'This is the first post of my new Astro blog.'
+description: 'Post number three. Lets try and get this one on top.'
 author: 'Lyle Klyne'
 image:
     url: 'https://astro.build/assets/blog/astro-1-release-update/cover.jpeg' 
