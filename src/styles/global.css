@@ -27,8 +27,17 @@ body {
 }
 
 h1 {
+    margin-bottom: 0;
+}
+
+h1.small-h1 {
     margin: 1rem 0;
-    font-size: 2.5rem;
+    font-size: 1.15rem;
+    line-height: 1.6em;
+    letter-spacing: -0.015em;
+    font-weight: 400;
+    margin-top: 5rem;
+
 }
 
 h3 {
@@ -37,16 +46,20 @@ h3 {
 }
 
 p, ul {
-    font-family: "Newsreader", serif;
+    /* font-family: "Newsreader", serif; */
     font-size: 1.15rem;
     line-height: 1.6em;
     letter-spacing: -0.015em;
 }
 
+ul {
+    padding-inline-start: 1rem;
+}
+
 a {
     padding: 0;
     color: white;
-    opacity: 0.5;
+    opacity: 0.64;
     text-decoration: none;
     border-bottom: 1px dashed rgba(255, 255, 255, 0.2)
 
@@ -54,17 +67,22 @@ a {
 
   a:hover {
     opacity: .95;
-    border-bottom: 1px solid white
+    border-bottom: 1px solid white;
+    background-color: rgba(255, 255, 255, 0.1)
   }
 
 /* main styles */
 
 .page-title {
-    margin-bottom: 4rem;
+    margin-top: 4rem;
+    margin-bottom: 0;
 }
 
 blockquote {
-    border-left: 1px solid white
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    margin-left: 0;
+    padding-left: 1rem;
+    opacity: 0.8
 }
 
 .summary {
@@ -72,7 +90,26 @@ blockquote {
     font-family: "Inter", sans-serif;
     font-weight: 400;
     line-height: 160%;
+}
 
+img {
+    border-radius: 2rem;
+}
+
+.blog-list-title {
+    font-size: 1.15rem
+}
+
+.blog-list-divider {
+    height: 2rem;
+    content: "";
+    border-top: 1px solid rgba(255, 255, 255, 0.1)
+}
+
+.blog-date-published {
+    margin-top: 0;
+    margin-bottom: 2rem;
+    opacity: 0.5;
 }
 
 /* nav styles */
@@ -102,7 +139,7 @@ blockquote {
     display: block;
     text-align: center;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 /* .nav-links a:hover,
