@@ -20,6 +20,7 @@ body {
     line-height: 1.5;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
+    background-color: #1a1820;
 }
 
 * {
@@ -58,17 +59,16 @@ ul {
 
 a {
     padding: 0;
-    color: white;
-    opacity: 0.64;
+    color: rgb(222, 220, 255, 0.8);
     text-decoration: none;
-    border-bottom: 1px dashed rgba(255, 255, 255, 0.2)
+    /* border-bottom: 1px dashed rgba(255, 255, 255, 0.2) */
 
   }
 
   a:hover {
-    opacity: .95;
-    border-bottom: 1px solid white;
-    background-color: rgba(255, 255, 255, 0.1)
+    color: rgb(227, 226, 255);
+    /* border-bottom: 1px solid rgb(133, 126, 255); */
+    background-color: rgba(255, 255, 255, 0.05)
   }
 
 /* main styles */
