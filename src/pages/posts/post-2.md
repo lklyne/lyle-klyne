@@ -5,12 +5,12 @@ pubDate: 2023-01-22
 description: "'If you wish to make an apple pie from scratch, you must first invent the universe.'"
 author: 'Lyle Klyne'
 image:
-    url: 'https://cdn.mos.cms.futurecdn.net/nEtxF6h8J6UhKUUx2gDoTU-1200-80.jpg' 
-    alt: 'A black and white photo of Carl Sagan.'
+    url: 'https://cdn.mos.cms.futurecdn.net/nEtxF6h8J6UhKUUx2gDoTU-970-80.jpg' 
+    alt: 'A gradient with a noise texture'
 tags: ["blogging", "learning in public"]
 ---
 
-Carl Sagan ([Youtube](https://www.youtube.com/watch?v=7s664NsLeFM))
+## Carl Sagan ([Youtube](https://www.youtube.com/watch?v=7s664NsLeFM))
 
 > If you wish to make an apple pie from scratch, you must first invent the universe. 
 

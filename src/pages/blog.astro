@@ -6,14 +6,7 @@ const allPosts = await Astro.glob('../pages/posts/*.md')
 const allPostsReversed = allPosts.reverse()
 
 ---
-<!-- <style>
-	body {
-		background-color: #1a1820;
-	}
-</style> -->
-
 <BaseLayout pageTitle={pageTitle}>
-	<br><br>
 	{allPostsReversed.map((post) => <BlogPost url={post.url} title={post.frontmatter.title} description={post.frontmatter.description} content={post.compiledContent()}></BlogPost>)}
 </BaseLayout>
 
