@@ -1,35 +1,86 @@
 ---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Link from "../components/Link.astro";
 
-import BaseLayout from '../layouts/BaseLayout.astro';
-
-const pageTitle = 'About'
+const pageTitle = "About";
 
 const identity = {
-	firstName: 'Lyle',
-	lastName: 'Klyne',
-	country: 'United States',
-	city: 'Los Angeles',
-	hobbies: ['Art', '3D', 'Furniture Design', 'Sound Design']
-}
+	firstName: "Lyle",
+	lastName: "Klyne",
+	country: "United States",
+	city: "Los Angeles, CA",
+	hobbies: ["Art", "3D", "Furniture Design", "Sound Design"],
+};
 
-const lookingForWork = false
+const lookingForWork = false;
 
-const skills = ['Interaction Design', 'Data Visualization', 'Web Dev']
+const skills = ["Interaction Design", "Data Visualization", "Web Dev"];
 
+const employer = `NASA's Jet Propulsion Laboratory`
+const employerURL = `https://www.jpl.nasa.gov/`
 ---
+<BaseLayout pageTitle={pageTitle}>
+	<p>
+		Hello and good to see you! I'm Lyle, a designer, artist,
+		and wannabe 3D web developer based out of {identity.city}. I enjoy making purposeful software with
+		good people — you can find me happiest when I'm making tools and
+		experiences that cultivate knowledge, spark creativity, or drive
+		positive social change. I currently design software for mission
+		operations at <Link
+			url="https://www.jpl.nasa.gov/"
+			text="NASA's Jet Propulsion Laboratory"
+		/> and am perpetually learning, tinkering and <i>making stuff</i> at home.
+	</p>
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{pageTitle}</title>
+	<p>
+		I received a Bachelors in International Relations and a <Link
+			url="https://mhcid.washington.edu/"
+			text="Masters in Human-Computer Interaction & Design"
+		/> at the University of Washington. As a person with two interdisciplinary
+		degrees and a passion for exploration, I enjoy collaborating with diverse
+		teams throughout the design and development process, but I’m happy to lead
+		efforts around prototyping and interaction design.
+	</p>
 
-	</head>
-	<body>
-		<BaseLayout>
-			<p>Hello and good to see you! I'm {identity.firstName}, a designer, artist, and aspiring developer. I enjoy making purposeful software with good people — you can find me happiest when I'm making tools and experiences that cultivate intellect/creativity or drive positive change. I also enjoy making silly things with my friends. I currently design software for mission operations at [NASA’s Jet Propulsion Laboratory](https://www.jpl.nasa.gov). I enjoy 3D, animation, sound design, building furniture, and .</p>
-				{lookingForWork && <p>I'm currently looking for new opportunities. Feel free to drop me a line.</p>}</BaseLayout>
-	</body>
-</html>
+	<p>
+		If you'd like to chat, grab a virtual coffee, or a real-life coffee in
+		LA, please reach out!
+	</p>
+</BaseLayout>
+
+<!-- <BaseLayout pageTitle={pageTitle}>
+	<br />
+	<p>
+		Hello and good to see you! I'm {identity.firstName}, a designer, artist,
+		and wannabe 3D web developer. I enjoy making purposeful software with
+		good people — you can find me happiest when I'm making tools and
+		experiences that cultivate knowledge, spark creativity, or drive
+		positive social change. I currently design software for mission
+		operations at <Link
+			url="https://www.jpl.nasa.gov/"
+			text="NASA's Jet Propulsion Laboratory"
+		/> and am perpetually learning, tinkering and ~making stuff~ at home.
+	</p>
+
+	<p>
+		I received a Bachelors in International Relations and a <Link
+			url="https://mhcid.washington.edu/"
+			text="Masters in Human-Computer Interaction & Design"
+		/> at the University of Washington. As a person with two interdisciplinary
+		degrees and a passion for exploration, I enjoy collaborating with diverse
+		teams throughout the design and development process, but I’m happy to lead
+		efforts around prototyping and interaction design.
+	</p><p>
+		If you'd like to chat, grab a virtual coffee, or a real-life coffee in
+		LA, please reach out!
+	</p>
+</BaseLayout> -->
+
+{
+	lookingForWork && (
+		<p>
+			I'm currently looking for new opportunities. Feel free to drop me a
+			line.
+		</p>
+	)
+}
