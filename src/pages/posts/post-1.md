@@ -5,7 +5,7 @@ pubDate: 2022-12-25
 description: "Time for something new! I haven't updated my personal website in over five years. I started so many times, creating mockups in figma, test projects in webflow, googling the latest front-end frameworks. Everytime I hit a roadblock..."
 author: 'Lyle Klyne'
 image:
-    url: '../../../images/blog/gr1.png' 
+    url: '../../public/images/blog/gr1.png' 
     alt: 'A gradient with a noise texture, purple and blue'
 tags: ["astro", "blogging", "learning in public"]
 ---
