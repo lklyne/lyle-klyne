@@ -218,6 +218,7 @@ a.blog-list-title {
 }
 
 @media screen and (max-width: 635px) {
+
     header {
         margin: -1rem;
         padding: 1rem;
@@ -236,5 +237,13 @@ a.blog-list-title {
         border-radius: 0.5rem;
         margin-top: 1rem;
         color: rgb(227, 226, 255);
+    }
+
+    .comet {
+        top: 0rem;
+    }
+
+    .summary {
+        font-size: 1.3rem;
     }
 }
