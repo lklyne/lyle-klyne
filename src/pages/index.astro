@@ -1,28 +1,87 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
-import Link from "../components/Link.astro";
+import BaseLayout from '../layouts/BaseLayout.astro'
+import Link from '../components/Link.astro'
 const pageTitle = 'Lyle Klyne'
 const employer = `NASA's Jet Propulsion Laboratory`
 const employerURL = `https://www.jpl.nasa.gov/`
 ---
+
 <BaseLayout pageTitle={pageTitle}>
-	<h2 class='summary'>I design and build software. Currently I'm working at <Link url={employerURL} text={employer} />, where I create tools for mission planning and spacecraft visualization for <a href='https://mars.nasa.gov/mars2020/' target="_blank" rel="noopener noreferrer">Mars 2020</a>, <a href='https://europa.nasa.gov/' target="_blank" rel="noopener noreferrer">Europa Clipper</a>, and internal research.</h2>
-	<p><strong>Recent work</strong></p>
-	<ul>
-		<li><Link url='https://nasa-ammos.github.io/aerie-docs/' text='Aerie' />, where I lead design for an open-source and multi-mission tool for mission planning.</li>
-		<li><Link url='https://pixlise.org' text='PIXLISE' />, a visualization and analysis tool for micro-XRF spectroscopy.</li>
-		<li><Link url='https://youtu.be/4OY0YCdFDpU?t=2323' text='ASTTRO' /> & <Link url='https://www.jpl.nasa.gov/news/mars-virtual-reality-software-wins-nasa-award' text='OnSight' />, two science targeting and terrain visualization tools used on daily operations for Perseverance and Opportunity.</li>
-		<li><Link url="https://mars.nasa.gov/mars2020/surface-experience/?drive=1222\&site=26" text='Explore with Perseverance' />, a simplified public version of the Mars terrain visualization tools with WebXR support.</li>
-		<li><Link url="https://dl.acm.org/doi/abs/10.1145/3586182.3616618" text='3D Magnetic fields visualization' />, a web and VR application to understand how magnetic fields interact with spacecraft.</li>
-		<li><Link url="https://github.com/nasa-jpl/stellar" text='Stellar Design System' />, an open-source design system to support data-rich and complex patterns common to spacecraft operations.</li>
-	</ul>
-	<br>
-	<p><strong>Personal projects</strong></p>
-	<p>I spend a lot of my time creating digital tools and interactive experiences, and I also enjoy making art, furniture, lights and sounds.</p>
-	<ul>
-		<li><Link url='https://daytime.so/' text='Daytime' />, a time tracking tool for mental health professionals. My first go at designing, building, and launching a product by myself. Built using Next.js.</li>
-		<li><Link url='https://lands.ooo/' text='Lands' />, a prototype for a spatial collaboration platform focused on zen and privacy. Built using react-three-fiber, websockets, and livekit.</li>
-		<li><Link url='https://jackson.radio/' text='Jackson Radio' />, a landing page featuring a 3D radio built out of divs.</li>
-		
-	</ul>
+  <h2 class="text-2xl leading-10 mb-24">
+    I design and build software. Currently I'm working at <Link
+      url={employerURL}
+      text={employer}
+    />, where I create tools for mission planning and spacecraft visualization
+    for <a
+      href="https://mars.nasa.gov/mars2020/"
+      target="_blank"
+      rel="noopener noreferrer">Mars 2020</a
+    >, <a
+      href="https://europa.nasa.gov/"
+      target="_blank"
+      rel="noopener noreferrer">Europa Clipper</a
+    >, and internal research.
+  </h2>
+  <p class="font-medium">Recent work</p>
+  <ul>
+    <li>
+      <Link url="https://nasa-ammos.github.io/aerie-docs/" text="Aerie" />,
+      where I lead design for an open-source and multi-mission tool for mission
+      planning.
+    </li>
+    <li>
+      <Link url="https://pixlise.org" text="PIXLISE" />, a visualization and
+      analysis tool for micro-XRF spectroscopy.
+    </li>
+    <li>
+      <Link url="https://youtu.be/4OY0YCdFDpU?t=2323" text="ASTTRO" /> & <Link
+        url="https://www.jpl.nasa.gov/news/mars-virtual-reality-software-wins-nasa-award"
+        text="OnSight"
+      />, two science targeting and terrain visualization tools used on daily
+      operations for Perseverance and Opportunity.
+    </li>
+    <li>
+      <Link
+        url="https://mars.nasa.gov/mars2020/surface-experience/?drive=1222\&site=26"
+        text="Explore with Perseverance"
+      />, a simplified public version of the Mars terrain visualization tools
+      with WebXR support.
+    </li>
+    <li>
+      <Link
+        url="https://dl.acm.org/doi/abs/10.1145/3586182.3616618"
+        text="3D Magnetic fields visualization"
+      />, a web and VR application to understand how magnetic fields interact
+      with spacecraft.
+    </li>
+    <li>
+      <Link
+        url="https://github.com/nasa-jpl/stellar"
+        text="Stellar Design System"
+      />, an open-source design system to support data-rich and complex patterns
+      common to spacecraft operations.
+    </li>
+  </ul>
+  <br />
+  <p class="font-medium">Personal projects</p>
+  <p>
+    I spend a lot of my time creating digital tools and interactive experiences,
+    and I also enjoy making art, furniture, lights and sounds.
+  </p>
+  <ul>
+    <li>
+      <Link url="https://daytime.so/" text="Daytime" />, a time tracking tool
+      for mental health professionals. My first go at designing, building, and
+      launching a product by myself. Built using Next.js.
+    </li>
+    <li>
+      <Link url="https://lands.ooo/" text="Lands" />, a prototype for a spatial
+      collaboration platform focused on zen and privacy. Built using
+      react-three-fiber, websockets, and livekit.
+    </li>
+    <li>
+      <Link url="https://jackson.radio/" text="Jackson Radio" />, a landing page
+      featuring a 3D radio built out of divs.
+    </li>
+  </ul>
 </BaseLayout>
